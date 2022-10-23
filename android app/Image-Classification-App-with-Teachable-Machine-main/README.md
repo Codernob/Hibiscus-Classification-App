@@ -7,6 +7,6 @@ We have used Google's Teachable Machine to train a machine learning model on com
 ## [Tutorial](https://youtu.be/jhGm4KDafKU)
 
 <p align="center">
- ![image](https://user-images.githubusercontent.com/55651740/197382267-0aa72b16-4aa4-40fa-b0cf-ec68a6fd6a1d.png)
+ ![image](https://user-images.githubusercontent.com/55651740/197382267-0aa72b16-4aa4-40fa-b0cf-ec68a6fd6a1d.png?raw=true, "Title")
 
 </p>
