@@ -7,5 +7,5 @@ We have used Google's Teachable Machine to train a machine learning model on com
 ## [Tutorial](https://youtu.be/jhGm4KDafKU)
 
 <p align="center">
- ![alt text]([http://url/to/img.png](https://user-images.githubusercontent.com/55651740/197382164-97db2f48-d372-4cbc-b9f0-b08b34cc20ed.png))
+ ![test]([http://url/to/img.png](https://user-images.githubusercontent.com/55651740/197382164-97db2f48-d372-4cbc-b9f0-b08b34cc20ed.png))
 </p>
