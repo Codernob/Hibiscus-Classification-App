@@ -8,7 +8,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher" <! -- added reference to custom launcher icon -->
         android:roundIcon="@mipmap/ic_launcher_round" <! -- file for round icon attatched -->
-        android:label="Hibiscus Classifier App"
+        android:label="Hibiscus Classifier App" <! -- changed app display name -->
         android:supportsRtl="true"
         android:theme="@style/Theme.MLWithTensorFlowLite">
         <activity
