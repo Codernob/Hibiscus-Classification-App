@@ -118,7 +118,8 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Native Red", "Native Pink", "Native White","Hybrid"};
+            
+            String[] classes = { "Native Red", "Native Pink", "Native White", "Hybrid" };
             result.setText(classes[maxPos]);
 
             String s = "";
@@ -140,22 +141,27 @@ public class MainActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == 1 && resultCode == RESULT_OK) {
             Bitmap image = null;
-            if(selection=="camera") image = (Bitmap) data.getExtras().get("data");
+            if(selection=="camera") { 
+                                        image = (Bitmap) data.getExtras().get("data");
+                                    }
+            
             else if(selection=="gallery") {
                 Uri imageUri = data.getData();
                 try {
-                    image = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
-                } catch (IOException e) {
+                        image = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
+                } 
+                catch (IOException e) {
                     e.printStackTrace();
                 }
             }
+            
             int dimension = Math.min(image.getWidth(), image.getHeight());
             image = ThumbnailUtils.extractThumbnail(image, dimension, dimension);
             imageView.setImageBitmap(image);
-
             image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
             classifyImage(image);
         }
+        
         super.onActivityResult(requestCode, resultCode, data);
     }
 
