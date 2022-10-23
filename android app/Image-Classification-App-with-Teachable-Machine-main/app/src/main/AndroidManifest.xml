@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round" <! -- file for round icon attatched -->
         android:label="Hibiscus Classifier App" <! -- changed app display name -->
         android:supportsRtl="true"
-        android:theme="@style/Theme.MLWithTensorFlowLite">
+        android:theme="@style/Theme.MLWithTensorFlowLite"> <! -- custom theme added -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
