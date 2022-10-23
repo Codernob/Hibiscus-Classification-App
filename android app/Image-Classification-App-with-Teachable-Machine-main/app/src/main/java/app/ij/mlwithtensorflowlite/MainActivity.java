@@ -3,6 +3,7 @@
  * github.com/ishaanjav
 */
 
+// defining package
 package app.ij.mlwithtensorflowlite;
 
 import androidx.annotation.Nullable;
