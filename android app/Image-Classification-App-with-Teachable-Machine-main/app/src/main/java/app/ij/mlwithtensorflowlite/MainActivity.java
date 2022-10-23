@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.setType("image/*");
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 startActivityForResult(Intent.createChooser(intent,"Title"), 1);
-                selection = "gallery";
+                selection = "gallery"; // selction variable set to gallery. this will come in handy while selecting between camera and gallery inputs later
             }
         });
 
