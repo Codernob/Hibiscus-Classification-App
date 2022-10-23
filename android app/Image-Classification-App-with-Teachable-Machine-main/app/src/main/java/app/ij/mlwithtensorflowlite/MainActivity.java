@@ -72,8 +72,9 @@ public class MainActivity extends AppCompatActivity {
                     Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(cameraIntent, 1);
                     selection = "camera";
-                } else {
-                    //Request camera permission if we don't have it.
+                } 
+                else {
+                    //Request camera permission if permission not granted already
                     requestPermissions(new String[]{Manifest.permission.CAMERA}, 100);
                 }
             }
