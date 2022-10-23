@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
                                         image = (Bitmap) data.getExtras().get("data");
                                     }
             
-            else if(selection=="gallery") {
+            else if(selection=="gallery") { // for processing input from gallery
                 Uri imageUri = data.getData();
                 try {
                         image = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
