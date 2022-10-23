@@ -25,6 +25,7 @@ import android.widget.TextView;
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
+// we'll need java's io libraries for processing images
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
