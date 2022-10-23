@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == 1 && resultCode == RESULT_OK) {
             Bitmap image = null;
-            if(selection=="camera") { 
+            if(selection=="camera") { // for processing input from camera
                                         image = (Bitmap) data.getExtras().get("data");
                                     }
             
