@@ -1,5 +1,5 @@
 /*
- * Created by ishaanjav
+ * Original Code by ishaanjav
  * github.com/ishaanjav
 */
 
@@ -21,6 +21,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+// importing tensorflow packages
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
@@ -127,7 +128,8 @@ public class MainActivity extends AppCompatActivity {
             for(int i = 0; i < classes.length; i++){
                 s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100);
             }
-            confidence.setText(s);
+            
+            confidence.setText(s); # setting result to the maximum confidence class
 
 
             // Releases model resources if no longer used.
