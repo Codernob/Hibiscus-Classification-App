@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MLWithTensorFlowLite"> <! -- custom theme added -->
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity" <! -- since MainActivity.java is used to run the app -->
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
