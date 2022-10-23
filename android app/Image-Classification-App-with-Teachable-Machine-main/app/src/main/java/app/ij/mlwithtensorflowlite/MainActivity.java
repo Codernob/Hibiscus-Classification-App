@@ -123,8 +123,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
             
-            String[] classes = { "Native Red", "Native Pink", "Native White", "Hybrid" };
-            result.setText(classes[maxPos]);
+            String[] classes = { "Native Red", "Native Pink", "Native White", "Hybrid" }; // 4 classes of hibiscus
+            result.setText(classes[maxPos]); 
 
             String s = "";
             for(int i = 0; i < classes.length; i++){
