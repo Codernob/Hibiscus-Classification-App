@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:label="Hibiscus Classifier App"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="Hibiscus Classifier App"
         android:supportsRtl="true"
         android:theme="@style/Theme.MLWithTensorFlowLite">
         <activity
