@@ -13,6 +13,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -29,11 +30,14 @@ import java.nio.ByteOrder;
 
 import app.ij.mlwithtensorflowlite.ml.Model;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     TextView result, confidence;
     ImageView imageView;
     Button picture;
+    Button gallery;
     int imageSize = 224;
 
     @Override
@@ -45,6 +49,18 @@ public class MainActivity extends AppCompatActivity {
         confidence = findViewById(R.id.confidence);
         imageView = findViewById(R.id.imageView);
         picture = findViewById(R.id.button);
+        gallery = findViewById(R.id.button2);
+
+        gallery.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setType("image/*");
+                intent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivityForResult(Intent.createChooser(intent,"Title"), 1);
+                selection = "gallery";
+            }
+        });
 
         picture.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
                     Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(cameraIntent, 1);
+                    selection = "camera";
                 } else {
                     //Request camera permission if we don't have it.
                     requestPermissions(new String[]{Manifest.permission.CAMERA}, 100);
@@ -101,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                     maxPos = i;
                 }
             }
-            String[] classes = {"Banana", "Orange", "Pen", "Sticky Notes"};
+            String[] classes = {"Native Red", "Native Pink", "Native White","Hybrid"};
             result.setText(classes[maxPos]);
 
             String s = "";
@@ -122,7 +139,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         if (requestCode == 1 && resultCode == RESULT_OK) {
-            Bitmap image = (Bitmap) data.getExtras().get("data");
+            Bitmap image = null;
+            if(selection=="camera") image = (Bitmap) data.getExtras().get("data");
+            else if(selection=="gallery") {
+                Uri imageUri = data.getData();
+                try {
+                    image = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
             int dimension = Math.min(image.getWidth(), image.getHeight());
             image = ThumbnailUtils.extractThumbnail(image, dimension, dimension);
             imageView.setImageBitmap(image);
@@ -132,4 +158,6 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onActivityResult(requestCode, resultCode, data);
     }
+
+    public String selection;
 }
