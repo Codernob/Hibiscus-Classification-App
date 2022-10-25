@@ -7,7 +7,7 @@ How to change app name
 <br>
 https://www.youtube.com/watch?v=-UyKZtIz-AE
 <br>
-How to Change App Icon in Android Studio
+How to Change the App Icon in Android Studio
 <br>
 https://www.youtube.com/watch?v=bJjHgWjiAKw
 <br>
