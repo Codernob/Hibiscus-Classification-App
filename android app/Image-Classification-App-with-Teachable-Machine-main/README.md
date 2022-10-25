@@ -1,6 +1,6 @@
-# Image Classification App using Teachable Machine and Tensorflow Lite
+#Image Classification App using Teachable Machine and Tensorflow Lite
 
-We have used Google's Teachable Machine to train a machine learning model on common objects, then deploy a TensorFlow Lite model in our Android app.
+We have used Google's Teachable Machine in order to train a Machine Learning Model on common objects, then deploy a TensorFlow Lite model in our Android app.
 
 [tutorial](https://youtu.be/jhGm4KDafKU).
 
