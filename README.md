@@ -3,7 +3,7 @@ An app where we have used android studio to deploy an ML model to the hibiscus c
 <br>
 tutorials:-
 <br>
-How to change app name
+How to change App Name
 <br>
 https://www.youtube.com/watch?v=-UyKZtIz-AE
 <br>
@@ -11,11 +11,11 @@ How to Change the App Icon in Android Studio
 <br>
 https://www.youtube.com/watch?v=bJjHgWjiAKw
 <br>
-How to add button
+How to add Custom Button
 <br>
 https://youtu.be/vjNb-WWWF9A
 <br>
-How to add image in Android Studio
+How to add Image in Android Studio
 <br>
 https://youtu.be/ttb6DI-s4dA
 <br>
