@@ -17,8 +17,8 @@
         android:text="Take Picture"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="21sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:textSize="21sp"/>
 
     <Button
         android:id="@+id/button2"
