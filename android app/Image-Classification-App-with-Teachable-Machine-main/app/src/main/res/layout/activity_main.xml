@@ -8,11 +8,11 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="100dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="101dp"
+        android:layout_marginBottom="300dp"
         android:background="@drawable/custom_button"
         android:text="Take Picture"
         android:textAllCaps="false"
