@@ -80,8 +80,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text=""
-        android:textColor="#000"
         android:textSize="22sp"
+        android:textColor="#000"
         android:id="@+id/confidence"
         android:layout_below="@+id/confidencesText"
         />
