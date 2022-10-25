@@ -2,7 +2,7 @@
 
 We have used Google's Teachable Machine in order to train a Machine Learning Model on common objects and then deploy a TensorFlow Lite model in our Android app.
 
-[tutorial](https://youtu.be/jhGm4KDafKU).
+[Tutorial](https://youtu.be/jhGm4KDafKU).
 
 ## [Tutorial](https://youtu.be/jhGm4KDafKU)
 
