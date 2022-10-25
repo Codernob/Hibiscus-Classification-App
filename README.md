@@ -1,7 +1,7 @@
 # Hibiscus-Classification-App
 An app where we have used android studio to deploy an Machine Learning Model to the Hibiscus Classification App.
 <br>
-tutorials:-
+tutorials:
 <br>
 How to change App Name
 <br>
