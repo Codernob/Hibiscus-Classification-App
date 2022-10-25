@@ -19,6 +19,6 @@ How to add image in Android Studio
 <br>
 https://youtu.be/ttb6DI-s4dA
 <br>
-How to add select photo from gallery option
+How to add 'Select Photo from Gallery' option
 <br>
 https://www.youtube.com/watch?v=7v9afVcQCxw
