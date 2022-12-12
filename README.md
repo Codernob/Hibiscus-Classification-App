@@ -5,7 +5,7 @@ An app where we have used android studio to deploy an Machine Learning Model to 
 <br>
 Some screenshots of our app-
 <br>
-![image](https://user-images.githubusercontent.com/55651740/207138164-4843b536-b9b7-4f06-a0e9-9cffca0b5bff.png | width="100")
+<img src="https://user-images.githubusercontent.com/55651740/207138164-4843b536-b9b7-4f06-a0e9-9cffca0b5bff.png" width="100">
 ![image](https://user-images.githubusercontent.com/55651740/207138299-84025e47-92f6-4496-8ddb-02596af297f7.png)
 <br>
 tutorials that we followed:
